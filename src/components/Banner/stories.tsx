@@ -10,7 +10,14 @@ export default {
     subtitle: '<p>Play the new <strong>CrashLands</strong> season',
     buttonLabel: 'Buy now',
     buttonLink: '/games/defy-death'
+  },
+  parameters: {
+    layout: 'fullscreen'
   }
 } as Meta
 
-export const Basic: StoryFn<BannerProps> = (args) => <Banner {...args} />
+export const Basic: StoryFn<BannerProps> = (args) => (
+  <div style={{ maxWidth: '104rem', margin: '0 auto' }}>
+    <Banner {...args} />
+  </div>
+)
