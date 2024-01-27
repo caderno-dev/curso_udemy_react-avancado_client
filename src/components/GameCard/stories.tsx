@@ -7,8 +7,14 @@ export default {
   args: {
     title: 'Red Dead Redemption',
     developer: 'Rockstar Games',
-    img: '/img/red-dead-img.jpg',
-    price: 'R$ 245'
+    img: 'https://source.unsplash.com/user/willianjusten/1042x580',
+    price: 'R$ 245,00',
+    promotionalPrice: 'R$ 200,00'
+  },
+  parameters: {
+    backgrounds: {
+      default: 'dark'
+    }
   }
 } as Meta
 
