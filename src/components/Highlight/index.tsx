@@ -15,7 +15,7 @@ const Highlight = ({
   title,
   subtitle,
   backgroundImage,
-  alignment,
+  alignment = 'right',
   floatImage,
   buttonLabel,
   buttonLink

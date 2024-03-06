@@ -45,7 +45,7 @@ export const Wrapper = styled.section<WrapperProps>`
       height: 32rem;
     `}
 
-    ${wrapperModifiers[alignment!]()}
+    ${!!alignment && wrapperModifiers[alignment]()}
   `}
 `
 
