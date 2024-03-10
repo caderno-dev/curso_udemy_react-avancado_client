@@ -48,8 +48,8 @@ describe('<Home />', () => {
     // banner
     expect(screen.getAllByText(/defy death 1/i)).toHaveLength(1)
     // card game ( 5 sections com 1 cards cada = 5x1 = 5)
-    expect(screen.getAllByText(/population zero/i)).toHaveLength(20)
+    expect(screen.getAllByText(/population zero/i)).toHaveLength(5)
     // highlight
-    expect(screen.getAllByText(/read dead is back!/i)).toHaveLength(3)
+    expect(screen.getAllByText(/red dead is back/i)).toHaveLength(3)
   })
 })

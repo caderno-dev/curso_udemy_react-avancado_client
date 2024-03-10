@@ -231,17 +231,23 @@ exports[`<Footer /> should render 4 column topics 1`] = `
         <a
           href="/"
         >
-          Home
+          <a>
+            Home
+          </a>
         </a>
         <a
           href="/games"
         >
-          Store
+          <a>
+            Store
+          </a>
         </a>
         <a
           href="/search"
         >
-          Search
+          <a>
+            Search
+          </a>
         </a>
       </nav>
     </div>
