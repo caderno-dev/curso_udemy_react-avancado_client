@@ -59,4 +59,15 @@ describe('<TextField />', () => {
     renderWithTheme(<TextField icon={<Email data-testid="icon" />} />)
     expect(screen.getByTestId('icon')).toBeInTheDocument()
   })
+
+  it('renders with icon on the right side', () => {
+    renderWithTheme(
+      <TextField iconPosition="right" icon={<Email data-testid="icon" />} />
+    )
+    expect(screen.getByTestId('icon').parentElement?.parentElement).toHaveStyle(
+      {
+        'flex-direction': 'row-reverse'
+      }
+    )
+  })
 })
