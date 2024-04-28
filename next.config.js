@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-import withPWA from 'next-pwa'
-
-module.exports = withPWA({
+const withPWA = require('next-pwa')({
   dest: 'public',
   disable: process.env.NODE_ENV === 'development',
   register: true,
   scope: '/app',
-  sw: 'service-worker.js',
+  sw: 'service-worker.js'
+})
+
+module.exports = withPWA({
   reactStrictMode: true
 })
