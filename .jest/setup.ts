@@ -1,10 +1,7 @@
 import '@testing-library/jest-dom'
 import 'jest-styled-components'
+import dotenv from 'dotenv'
 
-window.matchMedia = window.matchMedia || function() {
-  return {
-     matches : false,
-     addListener : function() {},
-     removeListener: function() {}
-  };
-};
+dotenv.config({
+  path: '.env.development'
+})
