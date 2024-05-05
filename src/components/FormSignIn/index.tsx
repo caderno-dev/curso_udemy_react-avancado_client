@@ -28,7 +28,7 @@ const FormSignIn = () => (
       </Button>
 
       <S.FormLink>
-        Dont have an account? <Link href="/sign-up">Sign up</Link>
+        Don’t have an account? <Link href="/sign-up">Sign up</Link>
       </S.FormLink>
     </form>
   </S.Wrapper>
