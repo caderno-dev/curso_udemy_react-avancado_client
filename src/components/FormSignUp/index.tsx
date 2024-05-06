@@ -38,10 +38,7 @@ const FormSignUp = () => (
       </Button>
 
       <FormLink>
-        Already have an account?{' '}
-        <Link href="/sign-in">
-          <a>Sign in</a>
-        </Link>
+        Already have an account? <Link href="/sign-in">Sign in</Link>
       </FormLink>
     </form>
   </FormWrapper>
