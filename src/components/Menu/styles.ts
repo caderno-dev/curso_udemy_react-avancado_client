@@ -110,11 +110,13 @@ export const RegisterBox = styled.div`
   `}
 `
 
-export const CreateAccount = styled.a`
+export const CreateAccount = styled.div`
   ${({ theme }) => css`
-    text-decoration: none;
-    color: ${theme.colors.primary};
-    border-bottom: 0.2rem solid ${theme.colors.primary};
+    a {
+      text-decoration: none;
+      color: ${theme.colors.primary};
+      border-bottom: 0.2rem solid ${theme.colors.primary};
+    }
   `}
 `
 
