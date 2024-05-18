@@ -8,6 +8,6 @@ export default {
 
 export const Basic: StoryFn = () => (
   <div style={{ maxWidth: '130rem', margin: '0 auto' }}>
-    <GameDetails />
+    <GameDetails platforms={['windows', 'linux', 'mac']} />
   </div>
 )
