@@ -15,25 +15,53 @@ export const Wrapper = styled.div`
       padding: 0;
       transform: translate(0, -50%);
     }
+
     .slick-prev {
       left: -${theme.spacings.xxlarge};
     }
+
     .slick-next {
       right: -${theme.spacings.xxlarge};
     }
+
     .slick-prev.slick-disabled,
     .slick-next.slick-disabled {
       visibility: hidden;
     }
+
     .slick-slide > div {
       margin: 0 ${theme.spacings.xsmall};
       cursor: pointer;
     }
+
     .slick-list {
       margin: 0 -${theme.spacings.xsmall};
     }
+
     ${media.lessThan('huge')`
       overflow-x: hidden;
     `}
+  `}
+`
+
+type ModalProps = {
+  isOpen: boolean
+}
+
+const modalModifiers = {
+  open: () => css`
+    opacity: 1;
+  `,
+
+  close: () => css`
+    opacity: 0;
+    pointer-events: none;
+  `
+}
+
+export const Modal = styled.div<ModalProps>`
+  ${({ isOpen }) => css`
+    ${isOpen && modalModifiers.open()}
+    ${!isOpen && modalModifiers.close()}
   `}
 `
