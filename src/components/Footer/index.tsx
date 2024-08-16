@@ -41,15 +41,9 @@ const Footer = () => (
           Links
         </Heading>
         <nav aria-labelledby="footer resources">
-          <Link href="/" legacyBehavior>
-            <a>Home</a>
-          </Link>
-          <Link href="/games" legacyBehavior>
-            <a>Store</a>
-          </Link>
-          <Link href="/search" legacyBehavior>
-            <a>Search</a>
-          </Link>
+          <Link href="/">Home</Link>
+          <Link href="/games">Store</Link>
+          <Link href="/search">Search</Link>
         </nav>
       </S.Column>
 
