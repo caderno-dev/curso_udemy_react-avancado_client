@@ -1,9 +1,11 @@
 import { StoryFn, Meta } from '@storybook/react'
-import ProfileMenu from '.'
+import ProfileMenu, { ProfileMenuProps } from '.'
 
 export default {
   title: 'ProfileMenu',
   component: ProfileMenu
 } as Meta
 
-export const Basic: StoryFn = () => <ProfileMenu />
+export const Basic: StoryFn<ProfileMenuProps> = (args) => (
+  <ProfileMenu {...args} />
+)
