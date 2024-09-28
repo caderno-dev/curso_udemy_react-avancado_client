@@ -3924,6 +3924,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@styled-icons/boxicons-regular@npm:^10.47.0":
+  version: 10.47.0
+  resolution: "@styled-icons/boxicons-regular@npm:10.47.0"
+  dependencies:
+    "@babel/runtime": "npm:^7.20.7"
+    "@styled-icons/styled-icon": "npm:^10.7.0"
+  peerDependencies:
+    react: "*"
+    styled-components: "*"
+  checksum: 10c0/f52f1df72332d1581bf08200e174ea4c733fd6e41bf2750a8e0a9b4f7b0b74c0acef520b4d4087d1c41f51f3a3a45e6b2ea3ee72b4bfb3664c5fd9336794a02d
+  languageName: node
+  linkType: hard
+
 "@styled-icons/boxicons-solid@npm:^10.47.0":
   version: 10.47.0
   resolution: "@styled-icons/boxicons-solid@npm:10.47.0"
@@ -13975,6 +13988,7 @@ __metadata:
     "@storybook/nextjs": "npm:^7.0.25"
     "@storybook/react": "npm:^7.0.25"
     "@storybook/testing-library": "npm:^0.2.0"
+    "@styled-icons/boxicons-regular": "npm:^10.47.0"
     "@styled-icons/boxicons-solid": "npm:^10.47.0"
     "@styled-icons/fa-brands": "npm:^10.47.0"
     "@styled-icons/material-outlined": "npm:^10.47.0"
